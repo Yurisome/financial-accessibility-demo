@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="분석할 문서 종류를 선택해주세요."
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textColor="@color/text_secondary"
             android:layout_marginBottom="40dp" />
 
@@ -46,6 +46,7 @@
                 android:gravity="center_vertical"
                 android:background="@drawable/radio_item_background"
                 android:buttonTint="@color/primary"
+                android:contentDescription="카드 명세서 선택"
                 android:layout_marginBottom="16dp" />
 
             <RadioButton
@@ -60,6 +61,7 @@
                 android:gravity="center_vertical"
                 android:background="@drawable/radio_item_background"
                 android:buttonTint="@color/primary"
+                android:contentDescription="신분증 선택"
                 android:layout_marginBottom="56dp" />
 
         </RadioGroup>
@@ -70,7 +72,8 @@
             android:layout_height="72dp"
             android:text="@string/btn_analyze"
             android:textSize="22sp"
-            android:backgroundTint="@color/primary" />
+            android:backgroundTint="@color/primary"
+            android:contentDescription="선택한 문서 분석 시작 버튼" />
 
     </LinearLayout>
 

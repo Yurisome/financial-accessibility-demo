@@ -17,7 +17,8 @@
             android:text="📄"
             android:textSize="80sp"
             android:layout_marginTop="56dp"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="24dp"
+            android:importantForAccessibility="no" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,6 +47,7 @@
             android:text="@string/btn_start"
             android:textSize="22sp"
             android:backgroundTint="@color/primary"
+            android:contentDescription="문서 분석 시작하기 버튼"
             android:layout_marginBottom="20dp" />
 
         <Button
@@ -56,6 +58,7 @@
             android:textSize="22sp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:strokeColor="@color/primary"
+            android:contentDescription="카드 명세서 데모 화면 보기 버튼"
             android:layout_marginBottom="48dp" />
 
     </LinearLayout>

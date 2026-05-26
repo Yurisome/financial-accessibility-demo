@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  분석 완료"
-            android:textSize="15sp"
+            android:textSize="18sp"
             android:textColor="@color/success"
             android:background="@drawable/badge_background"
             android:paddingStart="12dp"
@@ -49,7 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="AI 쉬운 설명"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textColor="#BBDEFB"
                 android:layout_marginBottom="10dp" />
 
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="OCR 신뢰도: 94%"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="@color/text_secondary" />
 
             <TextView
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="확인 필요: 아니오"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="@color/text_secondary"
                 android:gravity="end" />
 
@@ -127,6 +127,7 @@
             android:text="@string/btn_tts"
             android:textSize="22sp"
             android:backgroundTint="@color/primary"
+            android:contentDescription="분석 결과를 음성으로 듣기 버튼"
             android:layout_marginBottom="16dp" />
 
         <!-- 다시 분석하기 버튼 -->
@@ -138,6 +139,7 @@
             android:textSize="22sp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:strokeColor="@color/primary"
+            android:contentDescription="다시 분석하기 버튼"
             android:layout_marginBottom="32dp" />
 
     </LinearLayout>
