@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">금융 문서 도우미</string>
+    <string name="home_description">금융 문서를 쉽게 설명해주는\nAI 안내 서비스</string>
+    <string name="btn_start">문서 분석 시작하기</string>
+    <string name="btn_demo">데모 보기</string>
+    <string name="title_select_document">문서 종류 선택</string>
+    <string name="btn_analyze">분석 시작</string>
+    <string name="title_result">분석 결과</string>
+    <string name="btn_tts">음성으로 듣기</string>
+    <string name="btn_retry">다시 분석하기</string>
+</resources>

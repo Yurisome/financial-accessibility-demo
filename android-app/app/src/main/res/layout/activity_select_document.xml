@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_select_document"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분석할 문서 종류를 선택해주세요."
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="40dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_card"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text="  카드 명세서"
+                android:textSize="22sp"
+                android:textColor="@color/text_primary"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_item_background"
+                android:buttonTint="@color/primary"
+                android:layout_marginBottom="16dp" />
+
+            <RadioButton
+                android:id="@+id/radio_id"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text="  신분증"
+                android:textSize="22sp"
+                android:textColor="@color/text_primary"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_item_background"
+                android:buttonTint="@color/primary"
+                android:layout_marginBottom="56dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_analyze"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_analyze"
+            android:textSize="22sp"
+            android:backgroundTint="@color/primary" />
+
+    </LinearLayout>
+
+</ScrollView>

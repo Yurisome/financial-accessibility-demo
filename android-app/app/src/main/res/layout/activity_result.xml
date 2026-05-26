@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 완료 배지 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  분석 완료"
+            android:textSize="15sp"
+            android:textColor="@color/success"
+            android:background="@drawable/badge_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 문서 종류 제목 -->
+        <TextView
+            android:id="@+id/tv_doc_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카드 명세서 분석 완료"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="24dp" />
+
+        <!-- AI 쉬운 설명 카드 (파란 배경) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background_primary"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI 쉬운 설명"
+                android:textSize="15sp"
+                android:textColor="#BBDEFB"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tv_explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="21sp"
+                android:textColor="#FFFFFF"
+                android:lineSpacingMultiplier="1.6" />
+
+        </LinearLayout>
+
+        <!-- 주요 정보 카드 (회색 배경) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주요 정보"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Java 코드에서 동적으로 행을 추가 -->
+            <LinearLayout
+                android:id="@+id/info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <!-- OCR 신뢰도 / 확인 필요 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:id="@+id/tv_confidence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OCR 신뢰도: 94%"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary" />
+
+            <TextView
+                android:id="@+id/tv_needs_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="확인 필요: 아니오"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <!-- 음성으로 듣기 버튼 -->
+        <Button
+            android:id="@+id/btn_tts"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_tts"
+            android:textSize="22sp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 다시 분석하기 버튼 -->
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_retry"
+            android:textSize="22sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:strokeColor="@color/primary"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>
