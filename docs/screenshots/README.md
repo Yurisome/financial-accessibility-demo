@@ -1,3 +1,8 @@
+***
+# This repository is a public demo using mock data only.
+# It does not contain real OCR logic, real financial documents, personal data, or API credentials.
+***
+
 # 스크린샷 저장 위치
 
 데모 발표 및 제안서용 스크린샷을 이 폴더에 저장합니다.
